@@ -28,7 +28,7 @@ export default function Counter() {
 
         <button 
           onClick={increment}
-          className="px-6 py-2 bg-green-500 hover:bg-green-600 text-slate-400 rounded-lg transition-all"
+          className="px-6 py-2 bg-green-500 hover:bg-green-600 text-slate-200 rounded-lg transition-all"
         >
           + Increase
         </button>
