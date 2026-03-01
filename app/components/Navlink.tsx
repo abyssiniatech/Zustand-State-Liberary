@@ -7,7 +7,7 @@ const Links=[
     {name:"Contact",href="/contact"},
 ]
 
-export const Navlink=()=>{
+export default const Navlink=()=>{
     return(
          <div>
          {Links.map((link,index)=>(

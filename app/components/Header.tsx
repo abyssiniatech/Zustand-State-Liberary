@@ -2,7 +2,7 @@
 
 import Image   from "next/image"
 import Navlink from "./Navlink"
-export const Header=()=>{
+ const Header= () =>{
     return(
         <div className="flex justify-between items-center p-4 bg-gray-100">
             <h1>My website </h1>
@@ -17,3 +17,5 @@ export const Header=()=>{
         </div>
     )
 }
+ 
+export default Header
