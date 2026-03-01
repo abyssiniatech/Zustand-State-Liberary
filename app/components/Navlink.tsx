@@ -1,6 +1,5 @@
    "use client"
 import Link from "next/link"
-import Home from './../page';
 const Links = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },

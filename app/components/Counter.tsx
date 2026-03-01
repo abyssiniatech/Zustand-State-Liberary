@@ -9,7 +9,7 @@ export default function Counter() {
 
   return (
     <div className="flex flex-col items-center gap-6 p-10 bg-white/10 rounded-2xl backdrop-blur-md border border-white/20">
-      <h2 className="text-6xl font-black text-white">{count}</h2>
+      <h2 style={{color:count > 0 ? "white" : count<0 ?"red": "blue"}} className="text-6xl font-black text-white">{count}</h2>
       
       <div className="flex gap-4">
         <button 
