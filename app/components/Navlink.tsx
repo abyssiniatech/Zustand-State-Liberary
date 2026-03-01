@@ -1,13 +1,13 @@
    "use client"
 import Link from "next/link"
-const Links=[
-    {name:"About",href="/About"},
-    {name:"Product",href="/product"},
-    {name:"User",href="/user"},
-    {name:"Contact",href="/contact"},
-]
-
-export default const Navlink=()=>{
+const Links = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Product", href: "/product" },
+    { name: "User", href: "/user" },
+    { name: "Contact", href: "/contact" },
+];
+const Navlink=()=>{
     return(
          <div>
          {Links.map((link,index)=>(
@@ -19,3 +19,4 @@ export default const Navlink=()=>{
         </div>
          )
     }
+    export default Navlink
