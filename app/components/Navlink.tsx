@@ -6,6 +6,7 @@ const Links = [
     { name: "Product", href: "/product" },
     { name: "User", href: "/user" },
     { name: "Contact", href: "/contact" },
+    {name:"Form",href:"/form"},
 ];
 const Navlink=()=>{
     return(
