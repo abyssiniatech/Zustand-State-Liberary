@@ -9,10 +9,10 @@ interface form{
 const Hookform=()=>{
     const {register,handleSubmit,formState:{errors}}=useForm<form>()
     const onSubmit=(data:form)=>{
-        console.log(data)
+        console.log(data.name)
     }
     return(
-        <div className="min-h-screen text-gray-800 bg-white flex items-center ">
+        <div className="min-h-screen text-gray-800 bg-white flex items-center  ">
            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 p-10 bg-white/10 rounded-2xl backdrop-blur-md border border-white/20">
               <label htmlFor="name">Name:</label>
               <input
@@ -45,6 +45,7 @@ const Hookform=()=>{
                className=""
               />
               {errors.password && <p className="text-red-500">{errors.password.message}</p>}
+              <button className="bg-teal-700 text-white mx-auto m-4 rounded px-6 py-2 text-2xl hover:bg-teal-600">Add</button>
            </form>
         </div>
     )
